@@ -51,6 +51,22 @@ namespace TicketTidyr.Helpers
         }
 
         /// <summary>
+        /// <para>ファイルから全行を読み込み、文字列を取得します。</para>
+        /// </summary>
+        /// <param name="filePath">ファイルパス</param>
+        /// <returns>文字列のリスト</returns>
+        public static string ReadAllTextLines(string filePath, Encoding encoding = null)
+        {
+            var lines = ReadTextLines(filePath, encoding);
+            var sb = new StringBuilder();
+            foreach (var str in lines)
+            {
+                sb.AppendLine(str);
+            }
+            return sb.ToString();
+        }
+
+        /// <summary>
         /// 文字列に改行コードを付与して出力します。
         /// </summary>
         /// <param name="line"></param>

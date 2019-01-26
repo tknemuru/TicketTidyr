@@ -19,6 +19,11 @@ namespace TicketTidyr.Tools.HolidayGenerator
     /// </summary>
     public static class ApiManager
     {
+        /// <summary>
+        /// 祝日取得の開始日付
+        /// </summary>
+        private const string StartDate = "2019-01-01";
+
         // If modifying these scopes, delete your previously saved credentials
         // at ~/.credentials/calendar-dotnet-quickstart.json
         static string[] Scopes = { CalendarService.Scope.CalendarReadonly };
@@ -55,10 +60,10 @@ namespace TicketTidyr.Tools.HolidayGenerator
 
             // Define parameters of request.
             EventsResource.ListRequest request = service.Events.List("japanese__ja@holiday.calendar.google.com");
-            request.TimeMin = DateTime.Now;
+            request.TimeMin = DateTime.Parse(StartDate);
             request.ShowDeleted = false;
             request.SingleEvents = true;
-            request.MaxResults = 10;
+            request.MaxResults = 320;
             request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
 
             // List events.

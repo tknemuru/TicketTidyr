@@ -15,7 +15,7 @@ namespace TicketTidyr.Tools.HolidayGenerator
         /// <summary>
         /// 出力パス
         /// </summary>
-        private const string OutputPath = "../TicketTidyr/Resources/holidays.json";
+        private static readonly string OutputPath = $"../TicketTidyr/Resources/holidays.json";
 
         /// <summary>
         /// The entry point of the program, where the program control starts and ends.
