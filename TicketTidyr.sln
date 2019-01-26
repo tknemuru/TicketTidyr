@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketTidyr", "TicketTidyr\TicketTidyr.csproj", "{33EC4BB6-1CAA-4DAB-96FC-D49696D7E52C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketTidyr.Tools.HolidayGenerator", "TicketTidyr.Tools.HolidayGenerator\TicketTidyr.Tools.HolidayGenerator.csproj", "{12350829-1E7B-4F3C-A667-8F301525C899}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,14 @@ Global
 		{33EC4BB6-1CAA-4DAB-96FC-D49696D7E52C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33EC4BB6-1CAA-4DAB-96FC-D49696D7E52C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33EC4BB6-1CAA-4DAB-96FC-D49696D7E52C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12350829-1E7B-4F3C-A667-8F301525C899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12350829-1E7B-4F3C-A667-8F301525C899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12350829-1E7B-4F3C-A667-8F301525C899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12350829-1E7B-4F3C-A667-8F301525C899}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.StandardHeader = $1
+		$1.Text = @// using System.Collections.Generic;\n// using System.Linq;
 	EndGlobalSection
 EndGlobal
