@@ -332,3 +332,4 @@ ASALocalRun/
 # custom settings
 credentials.json
 token.json/
+token.json/*
