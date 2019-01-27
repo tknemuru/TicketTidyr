@@ -25,6 +25,8 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\CustomCsvHelper\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TicketTidyr\TicketTidyr.csproj" />
